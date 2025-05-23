@@ -2,6 +2,18 @@
 
 一个基于 Python 的命令行 V2EX 热门话题与回复浏览工具，支持自动补全、历史建议、键盘快捷键，终端美观显示。
 
+## 截图
+
+<p align="center">
+  <b>热门</b><br>
+  <img src="./assets/v2ex_1.jpg" width="900">
+</p>
+
+<p align="center">
+  <b>话题</b><br>
+  <img src="./assets/v2ex_2.jpg" width="900">
+</p>
+
 ## 特性
 - 获取 V2EX 热门话题和今日热门
 - 查看指定话题的详细内容与全部回复

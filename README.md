@@ -10,24 +10,12 @@
 
 ## 依赖环境
 
-- Python 3.7+
-- requests
-- beautifulsoup4
-- lxml
-- rich
-- prompt_toolkit
-- paprika（数据结构装饰器）
+- Python 3.11
 
 ## 安装依赖
 
 ```bash
 pip install -r requirements.txt
-```
-
-如无 requirements.txt，可手动安装：
-
-```bash
-pip install requests beautifulsoup4 lxml rich prompt_toolkit paprika
 ```
 
 ## 使用方法

@@ -1,4 +1,5 @@
-import web
+from . import web
+from . import models
 
 from rich.panel import Panel
 import os

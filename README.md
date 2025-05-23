@@ -1,41 +1,69 @@
-# v2ex-shell
+# v2ex
 
-一个基于 Python 的命令行 V2EX 热帖与回复浏览工具，支持自动补全、历史建议、键盘快捷键等功能。
+一个基于 Python 的命令行 V2EX 热门话题与回复浏览工具，支持自动补全、历史建议、键盘快捷键，终端美观显示。
 
-## 功能简介
+## 特性
+- 获取 V2EX 热门话题和今日热门
+- 查看指定话题的详细内容与全部回复
+- 支持命令行交互、自动补全、历史建议
+- 终端美观分页显示，支持多种快捷键
 
-- 获取 V2EX 热门话题列表
-- 查看指定话题的详细内容与回复
-- 支持命令行交互、自动补全与历史建议
+## 安装
 
-## 依赖环境
-
-- Python 3.11
-
-## 安装依赖
+推荐使用 pip 安装（需 Python 3.7+）：
 
 ```bash
-pip install -r requirements.txt
+pip install v2ex
+```
+
+或从源码安装：
+
+```bash
+git clone https://github.com/taizilongxu/v2ex-shell.git
+cd v2ex-shell
+pip install .
 ```
 
 ## 使用方法
 
+安装后，直接在终端输入：
+
 ```bash
-python v2ex.py
+v2ex
 ```
 
-- 启动后默认显示 V2EX 热门话题
-- 输入数字可查看对应话题的详细内容与回复
-- 输入 `hot` 可刷新热门话题
+- 启动后自动显示 V2EX 热门话题
+- 输入数字（如 1、2...）查看对应话题详情与回复
+- 输入字母（如 a、b、c...）查看今日热门话题详情
+- 输入 `hot` 刷新热门话题
+- 输入 `help` 查看命令帮助
+- Ctrl+C 重新输入，Ctrl+D 退出
 
-## 主要文件说明
+## 依赖
 
-- `v2ex.py`：主程序入口，命令行交互逻辑
-- `data.py`：数据处理与展示逻辑
-- `web.py`：网络请求与数据抓取
-- `models.py`：数据结构定义（Topic、Reply）
+主要依赖：
+- rich
+- prompt_toolkit
+- requests
+- beautifulsoup4
+- lxml
+- paprika
 
-## 备注
+完整依赖见 requirements.txt。
 
-- 本项目仅用于学习与交流，数据来源于 V2EX 公开 API 和网页。
-- 若遇到依赖问题，请确保已正确安装所有依赖库。
+## 数据结构
+
+- `Topic`：话题对象，包含 id、title、replies、url、content、node_title、username、last_reply_user、created 等字段
+- `Reply`：回复对象，包含 id、topic_id、content、username、created 等字段
+
+## 数据来源
+
+- 热门话题和回复数据来自 V2EX 官方 API 和网页解析，仅用于学习与交流。
+
+## 贡献
+
+欢迎 issue 和 PR！如有建议或 bug，欢迎反馈。
+
+---
+
+> 本项目仅供学习交流，严禁用于商业用途。

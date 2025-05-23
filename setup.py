@@ -1,8 +1,5 @@
 from setuptools import setup, find_packages
 
-with open("requirements.txt") as f:
-    requirements = f.read().splitlines()
-
 setup(
     name="v2ex",
     version="0.1.0",
@@ -10,7 +7,26 @@ setup(
     author="xiao.xu",
     author_email="",
     packages=find_packages(),
-    install_requires=requirements,
+    install_requires=[
+        "rich",
+        "prompt_toolkit",
+        "requests",
+        "beautifulsoup4",
+        "lxml",
+        "paprika",
+        "markdown-it-py",
+        "Pygments",
+        "tabulate",
+        "typing_extensions",
+        "urllib3",
+        "wcwidth",
+        "certifi",
+        "charset-normalizer",
+        "idna",
+        "mdurl",
+        "soupsieve",
+        "bs4"
+    ],
     python_requires=">=3.7",
     entry_points={
         "console_scripts": [

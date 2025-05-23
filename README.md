@@ -1,0 +1,53 @@
+# v2ex-shell
+
+一个基于 Python 的命令行 V2EX 热帖与回复浏览工具，支持自动补全、历史建议、键盘快捷键等功能。
+
+## 功能简介
+
+- 获取 V2EX 热门话题列表
+- 查看指定话题的详细内容与回复
+- 支持命令行交互、自动补全与历史建议
+
+## 依赖环境
+
+- Python 3.7+
+- requests
+- beautifulsoup4
+- lxml
+- rich
+- prompt_toolkit
+- paprika（数据结构装饰器）
+
+## 安装依赖
+
+```bash
+pip install -r requirements.txt
+```
+
+如无 requirements.txt，可手动安装：
+
+```bash
+pip install requests beautifulsoup4 lxml rich prompt_toolkit paprika
+```
+
+## 使用方法
+
+```bash
+python v2ex.py
+```
+
+- 启动后默认显示 V2EX 热门话题
+- 输入数字可查看对应话题的详细内容与回复
+- 输入 `hot` 可刷新热门话题
+
+## 主要文件说明
+
+- `v2ex.py`：主程序入口，命令行交互逻辑
+- `data.py`：数据处理与展示逻辑
+- `web.py`：网络请求与数据抓取
+- `models.py`：数据结构定义（Topic、Reply）
+
+## 备注
+
+- 本项目仅用于学习与交流，数据来源于 V2EX 公开 API 和网页。
+- 若遇到依赖问题，请确保已正确安装所有依赖库。

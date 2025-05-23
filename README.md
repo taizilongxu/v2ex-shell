@@ -6,12 +6,12 @@
 
 <p align="center">
   <b>热门</b><br>
-  <img src="./assets/v2ex_1.jpg" width="900">
+  <img src="./assets/v2ex_1.png" width="900">
 </p>
 
 <p align="center">
   <b>话题</b><br>
-  <img src="./assets/v2ex_2.jpg" width="900">
+  <img src="./assets/v2ex_2.png" width="900">
 </p>
 
 ## 特性
